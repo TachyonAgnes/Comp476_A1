@@ -43,7 +43,7 @@ The game is won if the Evader survives until the end of the game and wins.
 
 ## the characteristics of the behaviors I have defined
 
-My AI movements were initially implemented as a direct method. However, considering the complexity of the work and the emphasis on separating displacement and rotation for tasks, I created an abstract class called AIMovement during refactoring, which includes flocking, fleeing, seeking, pursuing, obstacle avoidance, look where you're going, wandering, A* pathfinding, turn toward target, turn away from target, and flocking.
+My AI movements were initially implemented as a direct method. However, considering the complexity of the work and the emphasis on separating displacement and rotation for tasks, I created an abstract class called AIMovement during refactoring, which includes flocking, fleeing, seeking, pursuing, obstacle avoidance, look where you're going, wandering, A* pathfinding, turn toward target, turn away from target.
 
 The turn away from target behavior has been abandoned and is no longer used. All AI movements in my AI agent class are implemented by calling the token class, token spawner class, pathfinding class, grid graph class, and AIMovement class. Game scene switching is achieved through the GameManager, and the game's victory condition is implemented by the GameAgent through the GameState.
 
